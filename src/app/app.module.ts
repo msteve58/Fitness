@@ -12,7 +12,7 @@ import { NewMemberFormComponent } from './new-member-form/new-member-form.compon
 
 import { MatFormFieldModule,MatInputModule,MatSelectModule,MatButtonModule,MatMenuModule, MatMenu } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavigationMenuComponent } from ./navigation-menu/navigation-menu.component';
+import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ListMembersComponent } from './list-members/list-members.component';
 import { NotFoundComponent } from './not-found/not-found.component';
