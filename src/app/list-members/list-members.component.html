@@ -1,0 +1,15 @@
+<div>
+    <ul *ngFor="let member of members let i = index">
+        <div class="member">
+            <li class="memberid" name="memberid"><b>Member ID: </b> {{member._id}} 
+                <button type="update" class="btnupdate" mat-raised-button [routerLink]="['/editMember', member._id]">UPDATE</button>
+                <button type="delete" class="btndelete" mat-raised-button color="warn" (click)="onDelete(member._id)">DELETE</button></li><br>
+            <li class="memberData" name="name"><b>Member Name:</b> {{member.lastName}}, {{member.firstName}} </li>
+            <li class="memberData"><b>Member Email:</b> {{member.email}} </li>
+            <li class="memberData"><b>Member Fitness Goal:</b> {{member.fitnessGoal}} </li>
+            <li class="memberData"><b>Member Record ID:</b> {{i}}</li>
+
+        </div>
+    </ul>
+
+</div>

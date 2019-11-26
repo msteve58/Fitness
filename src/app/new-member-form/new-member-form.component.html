@@ -1,0 +1,51 @@
+<div>
+    <h3>{{mode}} Fitness Member Form</h3>
+</div>
+    <div class="form-container" >
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+      <mat-form-field>
+        <input matInput placeholder="First Name" id="firstname" [(ngModel)]=" firstName" name="firstname" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Last Name" id="lastname" [(ngModel)]=" lastName" name="lastname" required>
+      </mat-form-field>
+      <p>
+      <mat-form-field >
+          <input matInput placeholder="Email" id="email" [(ngModel)]=" email" name="email" required>
+        </mat-form-field>
+     </p>
+     <p>
+      <mat-form-field>
+        <mat-select placeholder="Body Type" id="bodytype" [(ngModel)]=" bodyType" name="bodytype" required="">
+          <mat-option value="Endomorph">Endomorph</mat-option>
+          <mat-option value="Mesomorph">Mesomorph</mat-option>
+          <mat-option value="Ectomorph">Ectomorph</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="Fitness Goal" id="fitnessgoal" [(ngModel)]=" fitnessGoal" name="fitnessgoal" required >
+          <mat-option value="Lose Weight">Lose Weight</mat-option>
+          <mat-option value="Gain Muscle">Gain Muscle</mat-option>
+          <mat-option value="Body Building">Body Building</mat-option>
+          <mat-option value="Maintain">Maintain</mat-option>
+          <mat-option value="Unsure">Unsure</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Gender" id="gender" [(ngModel)]=" gender" name="gender" required>
+          <mat-option value="Male">Male</mat-option>
+          <mat-option value="Female">Female</mat-option>
+        </mat-select>
+      </mat-form-field>
+     </p> 
+    
+      <p>
+            <button type="submit" class="btnsubmit" mat-raised-button >Submit</button>
+            <button type="button" class="btncancel" mat-raised-button color="warn"(click)="newMember(); myForm.reset()">Cancel</button>
+        
+      </p>
+      
+    </form>
+    
+    </div>

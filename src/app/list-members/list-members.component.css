@@ -1,0 +1,21 @@
+.btndelete{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .btnupdate {
+    background-color: grey;
+    color: white;
+  }
+  .member .memberData {
+      text-indent: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .memberData {
+      list-style: circle;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+.member .memberid { 
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
