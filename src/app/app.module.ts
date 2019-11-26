@@ -9,17 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { MemberService } from './member.service';
 import { NewMemberFormComponent } from './new-member-form/new-member-form.component';  
 
-import { MatFormFieldModule } from '@angular/material';
-import { MatInputModule } from '@angular/material'; 
+
+import { MatFormFieldModule,MatInputModule,MatSelectModule,MatButtonModule,MatMenuModule, MatMenu } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSelectModule } from '@angular/material/select';
-import { MatButtonModule } from '@angular/material/button';
-import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
-import { MatMenuModule, MatMenu} from '@angular/material/menu';
+import { NavigationMenuComponent } from ./navigation-menu/navigation-menu.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ListMembersComponent } from './list-members/list-members.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomePageComponent } from './home-page/home-page.component';
+
 
 
 import { ReactiveFormsModule } from '@angular/forms';
