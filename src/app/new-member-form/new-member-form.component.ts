@@ -1,6 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { MemberService } from '../member.service';  
-import { Member } from 'serverside/models/member.model';
+import { Member } from '../../../serverside/models/member.model';
 import { Router } from '@angular/router';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 
